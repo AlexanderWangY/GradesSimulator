@@ -10,3 +10,4 @@ C:\Users\awang1534\Documents\Potter Jr High\Potter Jr High\obj\Debug\Potter Jr H
 C:\Users\awang1534\Documents\Potter Jr High\Potter Jr High\obj\Debug\Potter Jr High.exe
 C:\Users\awang1534\Documents\Potter Jr High\Potter Jr High\obj\Debug\Potter Jr High.xml
 C:\Users\awang1534\Documents\Potter Jr High\Potter Jr High\obj\Debug\Potter Jr High.pdb
+C:\Users\awang1534\Documents\Potter Jr High\Potter Jr High\obj\Debug\Potter_Jr_High.Form2.resources
