@@ -30,6 +30,11 @@ Partial Class Form1
         Me.lblNumber = New System.Windows.Forms.Label()
         Me.btnDisplay = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AddStudentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RemoveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -79,10 +84,12 @@ Partial Class Form1
         'lblNumber
         '
         Me.lblNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNumber.Location = New System.Drawing.Point(235, 50)
         Me.lblNumber.Name = "lblNumber"
         Me.lblNumber.Size = New System.Drawing.Size(54, 22)
         Me.lblNumber.TabIndex = 5
+        Me.lblNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnDisplay
         '
@@ -102,6 +109,34 @@ Partial Class Form1
         Me.btnExit.Text = "E&xit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(394, 24)
+        Me.MenuStrip1.TabIndex = 8
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddStudentToolStripMenuItem, Me.RemoveToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'AddStudentToolStripMenuItem
+        '
+        Me.AddStudentToolStripMenuItem.Name = "AddStudentToolStripMenuItem"
+        Me.AddStudentToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AddStudentToolStripMenuItem.Text = "Add"
+        '
+        'RemoveToolStripMenuItem
+        '
+        Me.RemoveToolStripMenuItem.Name = "RemoveToolStripMenuItem"
+        Me.RemoveToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.RemoveToolStripMenuItem.Text = "Remove"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -115,8 +150,12 @@ Partial Class Form1
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lstGrades)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.Text = "Potter Jr High"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -130,4 +169,8 @@ Partial Class Form1
     Friend WithEvents lblNumber As Label
     Friend WithEvents btnDisplay As Button
     Friend WithEvents btnExit As Button
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AddStudentToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RemoveToolStripMenuItem As ToolStripMenuItem
 End Class
